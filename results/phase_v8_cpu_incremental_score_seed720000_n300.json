@@ -1,0 +1,44 @@
+{
+  "v6_step": 2500,
+  "causal": true,
+  "chunk_frames": 4,
+  "incremental_refiner": true,
+  "scores": {
+    "st": {
+      "echo": 4.5341,
+      "deg": 4.999
+    },
+    "nst": {
+      "echo": 4.9982,
+      "deg": 3.9307
+    },
+    "dt": {
+      "echo": 4.2541,
+      "deg": 3.8019
+    }
+  },
+  "gates": {
+    "st_echo": true,
+    "nst_deg": true,
+    "dt_echo": true,
+    "dt_deg": true
+  },
+  "gate_diagnostics": {
+    "st": {
+      "mean_active_fraction": 0.0119,
+      "clips_active": 5,
+      "n": 100
+    },
+    "nst": {
+      "mean_active_fraction": 0.0,
+      "clips_active": 0,
+      "n": 100
+    },
+    "dt": {
+      "mean_active_fraction": 0.9894,
+      "clips_active": 100,
+      "n": 100
+    }
+  },
+  "aecmos_feature_path": "fast_librosa_equivalent"
+}

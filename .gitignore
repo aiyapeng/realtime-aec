@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+data/
+runs/
+outputs/
+logs/
+*.wav
+*.flac
+third_party/aecmos/*.onnx

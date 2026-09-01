@@ -1,0 +1,16 @@
+{
+  "checkpoint_step": 2500,
+  "checkpoint_sha256": "E3CF5024C70852922DA49E780A0D52BDD170DA815DBCDF789668F927E6A0C522",
+  "frames": 73,
+  "output_frames": 73,
+  "lookahead_frames": 4,
+  "chunk_frames": 4,
+  "history_frames": 126,
+  "incremental_refiner": true,
+  "scene_gate_enabled": true,
+  "scene_soft_gate": true,
+  "scene_soft_floor": 0.5,
+  "max_mask_abs_error": 2.5332479935968877e-07,
+  "max_gate_abs_error": 0.0,
+  "finite": true
+}

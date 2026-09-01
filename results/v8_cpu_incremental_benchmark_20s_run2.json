@@ -1,0 +1,17 @@
+{
+  "device": "cpu",
+  "torch_threads": 4,
+  "torch_interop_threads": 1,
+  "audio_seconds": 20.0,
+  "wall_seconds": 11.4347812,
+  "rtf": 0.57173906,
+  "lookahead_frames": 4,
+  "stream_chunk_frames": 4,
+  "scene_soft_gate": true,
+  "scene_soft_floor": 0.5,
+  "incremental_refiner": true,
+  "latency_samples": 1152,
+  "latency_ms": 72.0,
+  "finite": true,
+  "output_rms": 0.04681694480577554
+}

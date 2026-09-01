@@ -1,0 +1,61 @@
+{
+  "release": "aec52_v8_cpu_realtime_72ms_final_20260830",
+  "parent_release": "aec52_v7_realtime_72ms_final_20260830",
+  "model": "repro/data/phase_v8_cpu_realtime_final.pt",
+  "model_sha256": "E3CF5024C70852922DA49E780A0D52BDD170DA815DBCDF789668F927E6A0C522",
+  "weights_identical_to_v7": true,
+  "sample_rate_hz": 16000,
+  "lookahead_frames": 4,
+  "chunk_frames": 4,
+  "fixed_latency_samples": 1152,
+  "fixed_latency_ms": 72.0,
+  "runtime": {
+    "backend": "pytorch_fp32_cpu",
+    "incremental_refiner": true,
+    "torch_threads": 4,
+    "torch_interop_threads": 1,
+    "validated_cpu": "12th Gen Intel(R) Core(TM) i5-12600KF",
+    "torch_version": "2.8.0+cu126"
+  },
+  "cpu_rtf_20s": {
+    "runs": [0.569467905, 0.57173906, 0.567633615],
+    "median": 0.569467905,
+    "mean": 0.5696135266666666,
+    "worst": 0.57173906
+  },
+  "scene_gate": {
+    "type": "smoothstep_soft_gate",
+    "floor": 0.5,
+    "power": 1.0
+  },
+  "thresholds": {
+    "st_echo": 4.5,
+    "nst_deg": 3.8,
+    "dt_echo": 4.0,
+    "dt_deg": 3.8
+  },
+  "formal_results": [
+    "repro/data/phase_v8_cpu_incremental_score_seed120000_n300.json",
+    "repro/data/phase_v8_cpu_incremental_score_seed600000_n300.json",
+    "repro/data/phase_v8_cpu_incremental_score_seed720000_n300.json"
+  ],
+  "streaming_verification": [
+    "repro/data/v8_incremental_verify_chunk1.json",
+    "repro/data/v8_incremental_verify_chunk2.json",
+    "repro/data/v8_incremental_verify_chunk3.json",
+    "repro/data/v8_incremental_verify_chunk4.json",
+    "repro/data/v8_incremental_verify_chunk5.json",
+    "repro/data/v8_incremental_verify_chunk7.json",
+    "repro/data/v8_incremental_verify_chunk16.json"
+  ],
+  "cpu_benchmarks": [
+    "repro/data/v8_cpu_incremental_benchmark_20s_run1.json",
+    "repro/data/v8_cpu_incremental_benchmark_20s_run2.json",
+    "repro/data/v8_cpu_incremental_benchmark_20s_run3.json"
+  ],
+  "source_sha256": {
+    "phase_aware_v6.py": "7FB6D150ABF8C9E04763AE85646C6290C4E30B7631AE5F10D14D10F66945E6A0",
+    "aec/runtime.py": "521F46986ED6FA3FBA9442D2B73DFA05E819A23A06A026B8F3B778280E884D82",
+    "repro/v8_cpu_runtime.py": "3CB33673D595DB529A952278EFAF3312CD1EC3F33DE12B3ADACFDE672716FBB2"
+  }
+}
