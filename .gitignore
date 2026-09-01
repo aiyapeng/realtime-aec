@@ -8,5 +8,6 @@ runs/
 outputs/
 logs/
 *.wav
+!demo/*.wav
 *.flac
 third_party/aecmos/*.onnx
