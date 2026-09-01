@@ -1,0 +1,8 @@
+{
+  "sample_rate": 16000,
+  "duration_seconds": 7.0,
+  "pipeline_latency_ms": 72.0,
+  "synthetic_far_end_erle_db": 18.326889203672984,
+  "double_talk_output_si_sdr_db": 16.545517168737153,
+  "finite_output": true
+}

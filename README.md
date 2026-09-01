@@ -18,6 +18,16 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+## 快速示例
+
+仓库提供可直接运行的合成双讲示例：
+
+```bash
+python demo/run_demo.py
+```
+
+可对比试听 [`麦克风输入`](demo/microphone_input.wav?raw=1) 与 [`AEC 输出`](demo/aec_output.wav?raw=1)。远端参考、近端参考和示例指标见 [`demo/`](demo/README.md)。
+
 ## 流式验证
 
 ```bash
